@@ -1,0 +1,89 @@
+/* 
+Colors
+White - #FFF
+Black - #000
+Purple 950 - #301534
+Purple 600 - #8B6990
+Purple 100 - #F8EEFF
+Violet 600 - #AD28EB 
+
+Typography
+Work Sans Bold - 56px 66px LH
+Work Sans Semibold - 18px 21px LH
+Work Sans Regular - 16px 24px LH
+
+Spacing
+spacing-100 - 8px
+spacing-200 - 16px
+spacing 300 - 24px
+spacing 400 - 32px
+spacing 500 - 40px 
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8eeff;
+  font-family: "Work Sans";
+  font-size: 16px;
+}
+
+.pattern-image {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.title {
+  font-size: 56px;
+  margin-bottom: 32px;
+}
+
+.title img {
+  width: 35px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.answer {
+  color: #8b6990;
+  margin: 24px 0;
+  line-height: 24px;
+  transition: max-height 0.4s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.active {
+  max-height: 500px;
+}
